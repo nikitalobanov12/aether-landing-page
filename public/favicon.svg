@@ -1,6 +1,6 @@
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background: soft rounded square -->
-  <rect width="1024" height="1024" rx="224" fill="#F8FAFB"/>
+  <!-- Background: dark rounded square -->
+  <rect width="1024" height="1024" rx="224" fill="#0B0C10"/>
   
   <defs>
     <!-- Teal gradient: bottom to top -->

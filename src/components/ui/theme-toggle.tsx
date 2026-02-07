@@ -24,12 +24,12 @@ export function ThemeToggle() {
 		localStorage.setItem('theme', newTheme);
 	};
 
-	// Load theme preference on mount
+	// Load theme preference on mount - default to dark
 	useEffect(() => {
 		const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-		const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+		// Default to dark if no preference saved
+		const initialTheme = savedTheme || 'dark';
 		setTheme(initialTheme);
 
 		if (initialTheme === 'dark') {

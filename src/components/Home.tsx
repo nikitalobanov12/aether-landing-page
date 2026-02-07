@@ -15,67 +15,76 @@ import { useState, useEffect } from 'react';
 
 const problemSolutionData = [
 	{
-		id: 'calendar-sync',
-		problemTitle: 'Calendar Sync That Breaks',
+		id: 'frankenstein',
+		problemTitle: '3 Apps to Do 1 Job',
 		problemQuote:
-			'Todoist\'s calendar sync is broken. Tasks appear in the app but not in Google Calendar. Or they create duplicates.',
-		solutionTitle: 'Your Calendar and Tasks, Finally in Sync',
+			'My goals live in Notion. My tasks in Todoist. My calendar in Google. None of them talk to each other.',
+		solutionTitle: 'One Cohesive Timeline',
 		solutionDescription:
-			'Unlike other apps, our calendar integration works. Complete a task here, and it disappears from your calendar. Instantly. No duplicates. No sync delays.',
+			'Aether replaces the "Frankenstein Stack." Goals, projects, daily tasks, and your calendar — all in one place. Stop managing your system and start doing the work.',
 	},
 	{
-		id: 'accomplishments',
-		problemTitle: 'Accomplishments Disappear',
+		id: 'calendar-sync',
+		problemTitle: 'Sync That Creates Duplicates',
 		problemQuote:
-			'I complete a task and… it vanishes. How am I supposed to feel motivated? I have no idea what I did this week.',
-		solutionTitle: 'See What You Actually Accomplished',
+			'Todoist\'s calendar sync is broken. Tasks appear in the app but not in Google Calendar. Or they create duplicates. Every. Single. Time.',
+		solutionTitle: 'Bi-Directional Sync. Zero Duplicates.',
 		solutionDescription:
-			'We built a weekly review showing everything you completed, grouped by goal, with your progress tracked. Finally, motivation backed by data.',
+			'We didn\'t just "add integration." We rebuilt the sync engine. Change a time in Aether — updates Google Calendar instantly. Complete a task — removes it from your calendar. No ghost tasks.',
 	},
 	{
 		id: 'goals',
-		problemTitle: 'Tasks Don\'t Connect to Goals',
+		problemTitle: 'Flat Lists, No Context',
 		problemQuote:
-			'Todoist is a giant flat list. Where do my tasks fit in my actual life?',
-		solutionTitle: 'Goals → Projects → Daily Tasks. Connected.',
+			'Todoist is a giant flat list. I\'m checking boxes but I have no idea if I\'m making progress on what actually matters.',
+		solutionTitle: 'Goals → Projects → Daily Tasks.',
 		solutionDescription:
-			'Create your big-picture goals. Break them into projects. Then focus on today\'s tasks. See exactly how your daily work contributes to what matters.',
+			'Most to-do lists are flat. Aether understands context. Define your Q1 Goals. Break them into Projects. Sequence your Daily Tasks. When you sit down to work, you\'re moving the needle on what matters.',
+	},
+	{
+		id: 'accomplishments',
+		problemTitle: 'Completed Tasks Vanish',
+		problemQuote:
+			'I complete a task and it vanishes into the void. How am I supposed to feel motivated? I have no idea what I did this week.',
+		solutionTitle: 'Don\'t Just Do the Work. See the Work.',
+		solutionDescription:
+			'Aether keeps a "Done" history that feeds into your Weekly Review. See exactly where your time went and end your week feeling accomplished, not drained.',
 	},
 	{
 		id: 'ai-takeover',
-		problemTitle: 'AI That Takes Over',
+		problemTitle: 'AI That Takes Over Your Day',
 		problemQuote:
-			'Motion\'s AI scheduled my entire day without asking. It said I should work 2-4pm but I have a meeting at 2:30pm.',
-		solutionTitle: 'Smart Suggestions, Not Forced Scheduling',
+			'Motion\'s AI scheduled my entire day without asking. It put a work block over my lunch break and rearranged my afternoon.',
+		solutionTitle: 'AI That Suggests. Never Decides.',
 		solutionDescription:
-			'AI should help you think, not think for you. Our app suggests how to break down tasks, highlights what\'s due, and asks if you want help prioritizing. But you\'re always in control.',
+			'You are the boss. The AI is the assistant. We suggest subtasks and help prioritize a heavy day, but we will never auto-schedule over your lunch or rearrange your calendar without permission.',
 	},
 	{
 		id: 'pricing',
-		problemTitle: 'Too Expensive',
+		problemTitle: 'Premium Price for Basic Features',
 		problemQuote:
-			'Sunsama is $18/month. Morgen is $25/month. Both have bugs. I\'m paying premium prices for features Todoist has at 1/5 the cost.',
-		solutionTitle: 'Full-Featured for $8/Month',
+			'Sunsama is $20/month. Morgen is $15/month. I\'m paying premium prices for what should be table-stakes features.',
+		solutionTitle: 'Full-Featured for $8/Month.',
 		solutionDescription:
-			'We offer everything—calendar sync, goal hierarchy, completed task history, optional AI—for $8/month. Same price as a coffee.',
+			'We built Aether for bootstrappers, freelancers, and solo founders. Calendar sync, goal hierarchy, weekly review, optional AI — all for $8/month. Pricing like a utility, not a luxury.',
 	},
 ];
 
 const howItWorksSteps = [
-	{ icon: Target, label: 'Create goals' },
+	{ icon: Target, label: 'Define your goals' },
 	{ icon: FolderOpen, label: 'Break into projects' },
-	{ icon: ListTodo, label: 'Add daily tasks' },
-	{ icon: Calendar, label: 'See tasks + calendar together' },
-	{ icon: CheckCircle2, label: 'Check off. See progress.' },
+	{ icon: ListTodo, label: 'Sequence daily tasks' },
+	{ icon: Calendar, label: 'See tasks + calendar unified' },
+	{ icon: CheckCircle2, label: 'Review progress weekly' },
 ];
 
 const keyFeatures = [
-	'Works with Google Calendar (bi-directional)',
+	'Bi-directional Google Calendar sync',
 	'"Next Up" task sequencing',
-	'Goal-aligned hierarchy',
-	'Weekly review + completed history',
-	'Minimalist design',
-	'Optional AI help',
+	'Goals → Projects → Tasks hierarchy',
+	'Weekly review + completion history',
+	'AI that suggests, never decides',
+	'$8/mo — not $20',
 ];
 
 const pricingPlans = [
@@ -138,8 +147,8 @@ export function Home() {
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
 					>
-						<img src="/logo.svg" alt="Aether" className="h-8 w-8" />
-						<span className="text-xl font-bold">Aether</span>
+						<img src="/favicon.svg" alt="Aether" className="h-9 w-9 rounded-lg" />
+						<span className="text-xl font-bold tracking-tight">Aether</span>
 					</motion.div>
 
 					<motion.nav
@@ -152,7 +161,7 @@ export function Home() {
 							href="#problems"
 							className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
 						>
-							Problems We Solve
+							Why Aether
 						</a>
 						<a
 							href="#features"
@@ -198,7 +207,7 @@ export function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										Start free
+										Start for Free
 									</a>
 								</Button>
 							)}
@@ -217,23 +226,25 @@ export function Home() {
 						transition={{ duration: 0.8, ease: 'easeOut' }}
 					>
 						<Badge variant="secondary" className="mb-6 text-sm">
-							Calendar + tasks + goals in one place
+							Stop paying $20/mo for a calendar wrapper
 						</Badge>
 
 						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-[1.1]">
-							Organize Your Goals.
+							The missing link between your
 							<br />
-							<span className="text-primary">Execute Your Day.</span>
+							<span className="text-primary">Goals, Tasks, and Calendar.</span>
 						</h1>
 
 						<p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-							Finally—a task planner that syncs with your calendar, shows what's next, and lets you see what you accomplished.
+							Todoist is too flat. Motion is too controlling. Sunsama is too expensive.
+							<br className="hidden md:block" />
+							Aether is the $8/mo workspace for solo makers who want the big picture and the daily details.
 						</p>
 
 						<motion.div
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
-							className="inline-block mb-8"
+							className="inline-block mb-4"
 						>
 							<Button asChild size="lg" className="px-8 text-base">
 								<a
@@ -241,20 +252,24 @@ export function Home() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Start free
+									Start for Free
 								</a>
 							</Button>
 						</motion.div>
 
+						<p className="text-sm text-muted-foreground mb-8">
+							No credit card required
+						</p>
+
 						<div className="flex flex-wrap justify-center gap-4 text-sm">
 							<Badge variant="outline" className="py-1.5 px-3">
-								Google Calendar sync
+								Bi-directional Google Calendar sync
 							</Badge>
 							<Badge variant="outline" className="py-1.5 px-3">
-								Goal hierarchy
+								Goal → Project → Task hierarchy
 							</Badge>
 							<Badge variant="outline" className="py-1.5 px-3">
-								$8/mo Pro
+								$8/mo — not $20
 							</Badge>
 						</div>
 					</motion.div>
@@ -272,10 +287,10 @@ export function Home() {
 						viewport={{ once: true, margin: '-50px' }}
 					>
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							Problems We Solve
+							Why Are You Using 3 Apps to Do 1 Job?
 						</h2>
 						<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-							Real frustrations from real users. We built Aether to fix them.
+							Real frustrations. Real users. We built Aether to fix every one of them.
 						</p>
 					</motion.div>
 
@@ -428,10 +443,10 @@ export function Home() {
 						viewport={{ once: true, margin: '-50px' }}
 					>
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							Simple Pricing. No Surprises.
+							Premium Tools Shouldn't Cost a Utility Bill.
 						</h2>
 						<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-							Sunsama charges $18/mo. Morgen charges $25/mo. We think that's too much.
+							Sunsama charges $20/mo. Morgen charges $15/mo. We think that's too much for solo users.
 						</p>
 					</motion.div>
 
@@ -497,7 +512,7 @@ export function Home() {
 												target="_blank"
 												rel="noopener noreferrer"
 											>
-												Start free
+												{plan.highlighted ? 'Start Free Trial' : 'Get Started'}
 											</a>
 										</Button>
 									</CardContent>
@@ -529,10 +544,10 @@ export function Home() {
 						viewport={{ once: true, margin: '-50px' }}
 					>
 						<h2 className="text-3xl md:text-4xl font-bold mb-6">
-							Your Goals Deserve a System That Works
+							Your Goals Deserve a System That Works.
 						</h2>
 						<p className="text-xl text-muted-foreground mb-8">
-							Stop using disconnected tools. Start seeing how your daily tasks connect to your life goals.
+							Join 500+ early adopters who stopped juggling disconnected tools and started seeing how daily tasks connect to life goals.
 						</p>
 						<motion.div
 							whileHover={{ scale: 1.02 }}
@@ -545,12 +560,12 @@ export function Home() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Start free
+									Get Started — Free Forever Plan
 								</a>
 							</Button>
 						</motion.div>
 						<p className="text-sm text-muted-foreground mt-4">
-							Free forever. No credit card required.
+							Pro plan available for just $8/mo. No credit card required.
 						</p>
 					</motion.div>
 				</div>
@@ -561,7 +576,7 @@ export function Home() {
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col md:flex-row justify-between items-center gap-6">
 						<div className="flex items-center gap-3">
-							<img src="/logo.svg" alt="Aether" className="h-6 w-6" />
+							<img src="/favicon.svg" alt="Aether" className="h-7 w-7 rounded-md" />
 							<span className="font-semibold">Aether</span>
 						</div>
 
