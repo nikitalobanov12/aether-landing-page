@@ -11,10 +11,10 @@ export function TermsOfService() {
 					<div className="flex items-center gap-3">
 						<img
 							src="/logo.svg"
-							alt="DayFlow"
+							alt="Aether"
 							className="h-8 w-8"
 						/>
-						<span className="text-xl font-bold">DayFlow</span>
+						<span className="text-xl font-bold">Aether</span>
 					</div>
 					<Button asChild variant="outline">
 						<Link to="/">
@@ -38,7 +38,7 @@ export function TermsOfService() {
 
 					<h2>Introduction</h2>
 					<p>
-						Welcome to DayFlow! These Terms of Service govern your use of the DayFlow productivity application and related services.
+						Welcome to Aether! These Terms of Service govern your use of the Aether productivity application and related services.
 					</p>
 					<p>
 						By accessing or using our Service, you agree to be bound by these Terms. If you disagree with any part of these Terms, then you may not access the Service.
@@ -46,28 +46,28 @@ export function TermsOfService() {
 
 					<h2>Acceptance of Terms</h2>
 					<p>
-						By downloading, installing, or using DayFlow, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy.
+						By downloading, installing, or using Aether, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy.
 					</p>
 					<ul>
 						<li>You must be at least 13 years old to use our Service</li>
 						<li>If you are under 18, you must have parental or guardian consent</li>
 						<li>You are responsible for ensuring compliance with local laws and regulations</li>
-						<li>These Terms constitute a legally binding agreement between you and DayFlow</li>
+						<li>These Terms constitute a legally binding agreement between you and Aether</li>
 						<li>Your continued use of the Service constitutes acceptance of any modifications to these Terms</li>
 					</ul>
 
 					<h2>Description of Service</h2>
 					<p>
-						DayFlow is a hybrid desktop and web productivity application that helps users manage tasks, set goals, and optimize productivity through AI-powered scheduling and insights. Our Service includes:
+						Aether is a hybrid desktop and web productivity application that helps users manage tasks, set goals, and optimize productivity through AI-powered scheduling and insights. Our Service includes:
 					</p>
 					<ul>
 						<li><strong>Task Management:</strong> Create, organize, prioritize, and track your tasks with advanced categorization and progress tracking</li>
 						<li><strong>Goal Setting:</strong> Set and track personal and professional goals across multiple categories</li>
-						<li><strong>AI-Powered Features:</strong> Intelligent task scheduling, time estimation, and productivity insights using Google Gemini AI</li>
+						<li><strong>AI-Powered Features:</strong> Intelligent task scheduling, time estimation, and productivity insights using Hugging Face Inference API</li>
 						<li><strong>Board Organization:</strong> Organize tasks into customizable boards with colors and descriptions</li>
 						<li><strong>Time Tracking:</strong> Sprint sessions, focus timers, and productivity pattern analysis</li>
 						<li><strong>Google Calendar Integration:</strong> Sync tasks with your Google Calendar and create calendar events</li>
-						<li><strong>Google Tasks Integration:</strong> Import existing Google Tasks into DayFlow</li>
+						<li><strong>Google Tasks Integration:</strong> Import existing Google Tasks into Aether</li>
 						<li><strong>Cross-Platform Support:</strong> Desktop applications for Windows, macOS, and Linux, plus web-based access</li>
 						<li><strong>Data Synchronization:</strong> Real-time sync across all your devices using secure cloud infrastructure</li>
 						<li><strong>Collaboration Features:</strong> Share and collaborate on tasks and projects when applicable</li>
@@ -131,17 +131,17 @@ export function TermsOfService() {
 					<h2>Third-Party Integrations</h2>
 
 					<h3>Google Services Integration</h3>
-					<p>DayFlow integrates with Google services including Calendar, Tasks, and Gemini AI. By using these integrations:</p>
+					<p>Aether integrates with Google services including Calendar and Tasks. By using these integrations:</p>
 					<ul>
 						<li>You must have a valid Google account and comply with Google's Terms of Service</li>
-						<li>You authorize DayFlow to access your Google services as specified in our Privacy Policy</li>
+						<li>You authorize Aether to access your Google services as specified in our Privacy Policy</li>
 						<li>You understand that Google's privacy and data handling policies apply to your interactions with Google services</li>
 						<li>You can revoke access permissions at any time through your Google account settings</li>
 						<li>We are not responsible for Google's services or any issues arising from their use</li>
 					</ul>
 
 					<h3>AI-Powered Features</h3>
-					<p>Our AI features are powered by Google Gemini. By using AI features:</p>
+					<p>Our AI features are powered by Hugging Face. By using AI features:</p>
 					<ul>
 						<li>You consent to processing of your task data for scheduling and productivity insights</li>
 						<li>You understand that AI suggestions are automated and may not always be accurate</li>
@@ -179,7 +179,7 @@ export function TermsOfService() {
 
 					<h2>Privacy and Data Protection</h2>
 					<p>
-						Your privacy is important to us. Please review our Privacy Policy, which explains how we collect, use, and protect your information. By using DayFlow, you consent to the collection and use of your information as described in our Privacy Policy.
+						Your privacy is important to us. Please review our Privacy Policy, which explains how we collect, use, and protect your information. By using Aether, you consent to the collection and use of your information as described in our Privacy Policy.
 					</p>
 					<ul>
 						<li>We implement industry-standard security measures to protect your data</li>
@@ -194,7 +194,7 @@ export function TermsOfService() {
 					<h3>Service Availability</h3>
 					<ul>
 						<li>We strive to maintain high service availability but do not guarantee 100% uptime</li>
-						<li>DayFlow may be unavailable due to maintenance, updates, or technical issues</li>
+						<li>Aether may be unavailable due to maintenance, updates, or technical issues</li>
 						<li>We will provide reasonable notice of planned maintenance when possible</li>
 						<li>Service availability may vary by geographic location</li>
 					</ul>
@@ -211,7 +211,7 @@ export function TermsOfService() {
 
 					<h3>Service Plans</h3>
 					<ul>
-						<li>DayFlow may offer both free and paid service plans</li>
+						<li>Aether may offer both free and paid service plans</li>
 						<li>Paid plans may include additional features, storage, or functionality</li>
 						<li>Service plans and pricing may change with reasonable notice</li>
 						<li>Some features may require a paid subscription</li>
@@ -238,17 +238,17 @@ export function TermsOfService() {
 
 					<h3>Our Rights</h3>
 					<ul>
-						<li>DayFlow, its logo, and associated trademarks are our intellectual property</li>
-						<li>DayFlow, including its software, design, and functionality, is protected by copyright and other laws</li>
+						<li>Aether, its logo, and associated trademarks are our intellectual property</li>
+						<li>Aether, including its software, design, and functionality, is protected by copyright and other laws</li>
 						<li>You may not use our intellectual property without explicit permission</li>
 						<li>All rights not expressly granted to you are reserved by us</li>
 					</ul>
 
 					<h3>Your Rights</h3>
 					<ul>
-						<li>You retain all rights to content you create using DayFlow</li>
-						<li>You may use DayFlow in accordance with these Terms</li>
-						<li>You may not claim ownership of DayFlow or its components</li>
+						<li>You retain all rights to content you create using Aether</li>
+						<li>You may use Aether in accordance with these Terms</li>
+						<li>You may not claim ownership of Aether or its components</li>
 					</ul>
 
 					<h3>Feedback and Suggestions</h3>
@@ -262,8 +262,8 @@ export function TermsOfService() {
 
 					<h3>Service Disclaimers</h3>
 					<ul>
-						<li>DayFlow is provided "as is" and "as available" without warranties of any kind</li>
-						<li>We do not warrant that DayFlow will be uninterrupted, error-free, or secure</li>
+						<li>Aether is provided "as is" and "as available" without warranties of any kind</li>
+						<li>We do not warrant that Aether will be uninterrupted, error-free, or secure</li>
 						<li>We do not guarantee the accuracy, completeness, or usefulness of content</li>
 						<li>AI-generated content and suggestions are provided without warranty</li>
 						<li>Third-party integrations are subject to the availability and policies of third parties</li>
@@ -273,20 +273,20 @@ export function TermsOfService() {
 					<ul>
 						<li>Our liability is limited to the maximum extent permitted by law</li>
 						<li>We are not liable for indirect, incidental, special, or consequential damages</li>
-						<li>Our total liability shall not exceed the amount you paid for DayFlow in the 12 months preceding the claim</li>
+						<li>Our total liability shall not exceed the amount you paid for Aether in the 12 months preceding the claim</li>
 						<li>These limitations apply regardless of the theory of liability</li>
 						<li>Some jurisdictions may not allow these limitations</li>
 					</ul>
 
 					<h2>Indemnification</h2>
 					<p>
-						You agree to indemnify, defend, and hold harmless DayFlow, its officers, directors, employees, and agents from any claims, damages, losses, or expenses including legal fees arising from:
+						You agree to indemnify, defend, and hold harmless Aether, its officers, directors, employees, and agents from any claims, damages, losses, or expenses including legal fees arising from:
 					</p>
 					<ul>
-						<li>Your use of DayFlow</li>
+						<li>Your use of Aether</li>
 						<li>Your violation of these Terms</li>
 						<li>Your violation of any third-party rights</li>
-						<li>Content you submit, post, or transmit through DayFlow</li>
+						<li>Content you submit, post, or transmit through Aether</li>
 						<li>Your negligent or wrongful conduct</li>
 					</ul>
 
@@ -311,8 +311,8 @@ export function TermsOfService() {
 					<ul>
 						<li>We may modify these Terms at any time with reasonable notice</li>
 						<li>Material changes will be communicated through the application or via email</li>
-						<li>Your continued use of DayFlow constitutes acceptance of modified Terms</li>
-						<li>If you do not agree to modified Terms, you must discontinue using DayFlow</li>
+						<li>Your continued use of Aether constitutes acceptance of modified Terms</li>
+						<li>If you do not agree to modified Terms, you must discontinue using Aether</li>
 						<li>The most current version of these Terms will always be available on our website</li>
 					</ul>
 
@@ -328,14 +328,14 @@ export function TermsOfService() {
 					<h3>Termination by Us</h3>
 					<ul>
 						<li>We may terminate or suspend your account for violations of these Terms</li>
-						<li>We may terminate DayFlow entirely with reasonable notice</li>
+						<li>We may terminate Aether entirely with reasonable notice</li>
 						<li>Upon termination, your data will be handled according to our Privacy Policy</li>
 						<li>We will provide data export opportunities before termination when possible</li>
 					</ul>
 
 					<h3>Effect of Termination</h3>
 					<ul>
-						<li>Upon termination, your right to use DayFlow ceases immediately</li>
+						<li>Upon termination, your right to use Aether ceases immediately</li>
 						<li>Provisions regarding liability, indemnification, and dispute resolution survive termination</li>
 						<li>Your data will be deleted according to our data retention policies</li>
 					</ul>
@@ -343,7 +343,7 @@ export function TermsOfService() {
 					<h2>Miscellaneous</h2>
 
 					<h3>Entire Agreement</h3>
-					<p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and DayFlow.</p>
+					<p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Aether.</p>
 
 					<h3>Severability</h3>
 					<p>If any provision of these Terms is found unenforceable, the remaining provisions remain in full force and effect.</p>
@@ -360,14 +360,14 @@ export function TermsOfService() {
 					<h2>Contact Information</h2>
 					<p>For questions about these Terms of Service, please contact us:</p>
 					<ul>
-						<li><strong>Email:</strong> <a href="mailto:legal@dayflow.ca">legal@dayflow.ca</a></li>
-						<li><strong>Website:</strong> <a href="https://www.dayflow.ca">https://www.dayflow.ca</a></li>
-						<li><strong>Support:</strong> <a href="mailto:support@dayflow.ca">support@dayflow.ca</a></li>
+						<li><strong>Email:</strong> <a href="mailto:nikita@nikitalobanov.com">nikita@nikitalobanov.com</a></li>
+						<li><strong>Website:</strong> <a href="https://www.aethertask.com">https://www.aethertask.com</a></li>
+						<li><strong>Support:</strong> <a href="mailto:nikita@nikitalobanov.com">nikita@nikitalobanov.com</a></li>
 					</ul>
 
 					<div className="mt-12 p-6 bg-muted/50 rounded-lg">
 						<p className="text-muted-foreground leading-relaxed">
-							These Terms of Service are designed to protect both DayFlow and our users while ensuring fair and transparent use of our app. We are committed to providing a secure, reliable, and user-friendly productivity platform.
+							These Terms of Service are designed to protect both Aether and our users while ensuring fair and transparent use of our app. We are committed to providing a secure, reliable, and user-friendly productivity platform.
 						</p>
 					</div>
 				</div>
