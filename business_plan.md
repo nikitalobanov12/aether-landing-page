@@ -1,4 +1,4 @@
-# DayFlow Internal Business Plan
+# Aether Internal Business Plan
 
 *Version: 2.0 (Internal)Date: June 24, 2025*
 
@@ -6,7 +6,7 @@
 
 ## 1. Core Concept
 
-- **One-Sentence Pitch:** DayFlow is an AI-powered life planner that converts your long-term goals into a concrete, actionable daily schedule.
+- **One-Sentence Pitch:** Aether is an AI-powered life planner that converts your long-term goals into a concrete, actionable daily schedule.
 - **Product:** An intelligent life management app (Desktop/Web) that connects daily tasks (work, personal, habits) to long-term ambitions.
 - **Function:** It acts as a personal operating system, using AI to architect a user’s entire life, not just their workday. It is a personal development tool, not a team project manager.
 - **Differentiator:** Holistic, goal-driven AI planning. It is an intelligent system that works out-of-the-box, not a static to-do list or a flexible database requiring heavy setup.
@@ -86,9 +86,9 @@ Our primary target customer is the motivated, driven entrepreneur who values the
 
 **Pricing Strategy:**
 * **Model:** A single, all-inclusive Pro plan with monthly and annual billing.
-* **Monthly Price:** $34 per month.
-* **Annual Price:** $288 per year ($24/month, a ~29% discount).
-* **Justification:** This positions DayFlow as a premium, high-value alternative to the market leader, Motion. At $24/month annually, DayFlow is significantly more affordable than Motion’s individual plan ($29/month annually) while offering a more holistic life-management feature set and a superior native desktop application. This provides a strong competitive advantage and healthy margins.
+* **Monthly Price:** $8 per month.
+* **Annual Price:** $80 per year ($6.67/month, a ~17% discount).
+* **Justification:** This positions Aether as the most affordable option in the AI planning space. At $8/month, Aether significantly undercuts Motion ($29/month) and Sunsama ($18/month) while offering a holistic life-management feature set and a superior native desktop application. This aggressive pricing drives adoption and builds market share.
 
 ---
 
@@ -106,7 +106,7 @@ Our primary target customer is the motivated, driven entrepreneur who values the
 | Metric | Year 1 Goal | Year 2 Goal | Year 3 Goal |
 | --- | --- | --- | --- |
 | **Paying Customers** | 1,000 | 8,000 | 25,000 |
-| **ARR (at $288/yr)** | $288k | $2.3M | $7.2M |
+| **ARR (at $80/yr)** | $80k | $640k | $2M |
 
 ---
 
